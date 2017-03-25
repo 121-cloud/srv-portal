@@ -1,0 +1,162 @@
+一、渠道档案VO
+ba_sales_channels:
+{
+    "code": "N0001",
+    "name": "卡洛北方贸易公司",
+    "channel_type": {
+    	"code": "ch01",
+    	"name": "加盟店"
+    }
+    "level": {
+    	"code": "lv01",
+    	"name": "一级"
+    }
+    "region": {
+    	"code": "100000",
+    	"full_name": "北京"        
+    },
+    "ship_to": {
+    	"address": {
+    	    "region": {
+	        	"code": "100200",
+	        	"full_name": "北京市朝阳区"
+	        },
+     		"address_detail": "XXX街道"
+    	},
+    	"contact": {
+    		"user": {
+    			"code": "U001",
+    			"name": "小张"
+    		},
+    		"phone": "",
+    		"email": ""    		
+    	}        
+    },       
+	"customer": {
+		"code": "cus0001",
+		"name": "昌平北环商贸有限公司"
+	},
+	"link_org_acct_rel": 1, //链接商业关系
+	"link_account": "4",  //链接租户
+	"channel_assistant": "lj"  //渠道专员
+}
+
+
+二、仓库档案
+ba_warehouses
+{
+    "code" : "WH001",
+    "name" : "北京总仓",
+    "type" : "1",
+    "character" : "2",
+    "address" : {
+        "region" : {
+            "code" : "100200",
+            "full_name" : "北京市朝阳区"
+        },
+        "address_detail" : "XXX街道"
+    }
+}
+
+
+三、VMI关系(全局)
+bc_vmi_relations
+{
+   "warehouse_code": "WH002",
+   "warehouse_account": "4",
+   "org_acct_rel_id": "1",
+   "biz_rel_direct": "from",
+   "goods_owner": "3"
+}
+
+
+四、仓库补货关系
+bc_replenishment_relations
+{
+   "id": "rr001",
+   "from_warehouse_code": 源仓库,
+   "from_account": "3",
+   "to_warehouse_code": "目标仓库",
+   "to_account": "4",
+   "rule": {} 补货规则
+}
+
+五、渠道价格表
+bc_channel_prices
+{
+	"channel": { //渠道
+	    "code": "N0003",
+    	"name": "昌平分店",
+    	"account": "4"
+	},
+	"goods": { //商品
+		"account": "Kano", //货主
+    	"product_sku_code": "WINE001SP0001SP0002",
+    	"title": "科特勒2014 干红葡萄酒750ml"
+	},
+	"invbatchcode": "3", //批次号
+	"supply_price": {   //供货价
+		"tax_type": "VTA",  
+		"tax_rate": 0.17,	
+		"price_including_tax": {   //含税供货价
+			"currency": {		  
+				"currency_type": "CYN",
+				"money": 117.00
+			},
+			"original_currency":  { 
+				"currency_type": "USD",
+				"money": 17.55
+			}
+		},
+		"price": {   //无税供货价
+			"currency": {
+				"currency_type": "CYN",
+				"money": 100.00
+			},
+			"original_currency":  {
+				"currency_type": "USD",
+				"money": 15.00
+			}
+		}
+	},
+	"retail_price": {  //零售价
+		"tax_type": "Excise Duty", 
+		"tax_rate": 0.03,	
+		"price_including_tax": {  //含税零售价
+			"currency": {	
+				"currency_type": "CYN",
+				"money": 226.6
+			},
+			"original_currency":  { 
+				"currency_type": "USD",
+				"money": 41.2
+			}
+		},
+		"price": {    //无税零售价
+			"currency": {
+				"currency_type": "CYN",
+				"money": 220.00
+			},
+			"original_currency":  {
+				"currency_type": "USD",
+				"money": 40.00
+			}
+		}
+	},
+	"commission": {  //佣金
+		"computation_rule": {},  //佣金计算规则
+		"commission_value": {    //佣金
+			"currency": {		
+				"currency_type": "CYN",
+				"money": 20.00
+			},
+			"original_currency":  {
+				"currency_type": "USD",
+				"money": 5.00
+			}
+		}          	
+	}
+}
+
+
+

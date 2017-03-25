@@ -1,0 +1,53 @@
+{
+	"main": "otocloud.portal.PortalService",
+	"options": {		
+		"config": {
+			"service_name": "otocloud-portal",
+			"app_desc": "portal服务",
+			"isolation_vertx_pool": false,
+			"api_register_server": {
+				"webserver_name": "121webserver-N01"
+			},
+			"sys_datasource": {
+				"config": {
+					"max_pool_size": 30,
+					"user": "root",
+					"password": "root",
+					"driver_class": "com.mysql.jdbc.Driver",
+					"url": "jdbc:mysql://127.0.0.1:3306/121db_new?useUnicode=true&characterEncoding=UTF-8"
+				},
+				"sharedpool": "jdbc-ocr"
+			},
+			"mongo_client": 
+			{
+				"config": 
+				{
+					"db_name": "otocloud-portal",
+					"connection_string": "mongodb://127.0.0.1:27017"
+				},
+				"sharedpool": "mongo-portal"
+			},						
+		  "component_config": { 
+		      "user-menu-get": {
+		      		"options": {
+        				"config" :  {
+        				    "dependencies":{
+	        					"acct_service": {
+	        						"service_name": "otocloud-acct"
+	        					},
+	        					"auth_service": {
+	        						"service_name": "otocloud-auth"
+	        					}
+        					}
+						}
+					 }
+			   }
+ 	 	  },
+ 	 	  
+			"component_deployment": [
+			],
+			"component_common": {
+			}
+		}
+	}
+}

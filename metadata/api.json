@@ -1,0 +1,50 @@
+一、查询所负责的渠道列表
+message api：ocr-channel-manager.channel-org-mgr.findall
+rest api: ocr-channel-manager/channel-org-mgr/findall, http: POST
+input:
+分页查询参数
+{ fields: {},  //返回字段
+   paging: {
+      sort_field: 排序字段，只支持单个字段,
+      sort_direction: 1：升序，-1：降序,
+      page_number: 页码,
+      page_size: 每页大小,
+      total: 总数，下次需要回传
+      total_page: 总页数，下次需要回传
+   },
+   query: {
+   	  channel_assistant: lj
+   }  //其他条件  
+}
+output: 
+分页查询返回
+{
+   "total": 总数量
+   "total_page": 总页数,
+   "datas" vo[ba_sales_channels] 渠道数组
+}
+
+
+
+二、查询渠道VMI仓库
+message api：ocr-channel-manager.supplyrelation-mgr.bc_vmi_relations.get
+rest api: ocr-channel-manager/supplyrelation-mgr/bc_vmi_relations.get, http: POST
+input:
+{
+   "goods_owner": "3" //货主账户
+   "warehouse_account": "4" //渠道租户ID
+}
+output: vo[bc_vmi_relations]
+
+
+三、查询仓库补货关系
+message api：ocr-channel-manager.supplyrelation-mgr.bc_replenishment_relations.get
+rest api: ocr-channel-manager/supplyrelation-mgr/bc_replenishment_relations.get, http: POST
+input:
+{
+   "from_account": "3", //货主账户,
+   "to_account": "4",
+   "to_warehouse_code": "WH004" //仓库编码
+}
+output: vo[bc_replenishment_relations]
+

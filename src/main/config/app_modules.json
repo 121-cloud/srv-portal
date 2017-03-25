@@ -1,0 +1,370 @@
+{
+	"menu_type": "app_menu",
+	"menu_items": 
+	[
+		{
+			"id": 1,
+			"text": "商品中心",
+			"app_id": 6,
+			"children": 
+			[
+				{
+					"id": 11,
+					"text": "品类规划",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 12,
+					"text": "品牌管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 13,
+					"text": "商品档案管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"text": "渠道管理",
+			"app_id": 4,
+			"children": 
+			[
+				{
+					"id": 41,
+					"text": "渠道组织管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 42,
+					"text": "渠道补货关系",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 43,
+					"text": "价格及佣金政策",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 3,
+			"text": "采购管理",
+			"app_id": 2,
+			"children": 
+			[
+				{
+					"id": 31,
+					"text": "供应商管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 32,
+					"text": "采购订单",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 2,
+			"text": "库存中心",
+			"app_id": 3,
+			"children": 
+			[
+				{
+					"id": 21,
+					"text": "库存组织规划",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 22,
+					"text": "仓储设施管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 23,
+					"text": "采购入库",
+					"attributes": 
+					{
+						"url": "invcenter/pharseinv/pharseinv.html"
+					}
+				},
+
+				{
+					"id": 24,
+					"text": "拣货出库",
+					"children": 
+					[
+						{
+							"id": 241,
+							"text": "待拣货",
+							"attributes": 
+							{
+								"url": "invcenter/stockout/stockout.html"
+							}
+						},
+
+						{
+							"id": 242,
+							"text": "拣货中",
+							"attributes": 
+							{
+								"url": "invcenter/stockout/stockout-onpicking.html"
+							}
+						},
+
+						{
+							"id": 243,
+							"text": "已完成",
+							"attributes": 
+							{
+								"url": "invcenter/stockout/stockout-pickouted.html"
+							}
+						}
+					]
+				},
+
+				{
+					"id": 25,
+					"text": "现存量查询",
+					"attributes": 
+					{
+						"url": "invcenter/onhand/onhand.html"
+					}
+				}
+			]
+		},
+
+		{
+			"id": 5,
+			"text": "营销中心",
+			"app_id": 5,
+			"children": 
+			[
+				{
+					"id": 51,
+					"text": "渠道补货",
+					"children": 
+					[
+						{
+							"id": 511,
+							"text": "补货工作台",
+							"attributes": 
+							{
+								"url": "sales-center/channel-replenishment/replenishment-workbench.html"
+							}
+						},
+
+						{
+							"id": 512,
+							"text": "发货通知",
+							"children": 
+							[
+								{
+									"id": 5121,
+									"text": "发货通知",
+									"attributes": 
+									{
+										"url": "sales-center/channel-replenishment/channel-shipment.html"
+									}
+								},
+
+								{
+									"id": 5122,
+									"text": "打印发货单",
+									"attributes": 
+									{
+										"url": "sales-center/shipment/shipment.html"
+									}
+								},
+
+								{
+									"id": 5122,
+									"text": "签收完成查询",
+									"attributes": 
+									{
+										"url": "sales-center/shipment/shipment-completed.html"
+									}
+								}
+							]
+						},
+
+						{
+							"id": 513,
+							"text": "发货完成补货单",
+							"attributes": 
+							{
+								"url": "sales-center/channel-replenishment/replenishment.html"
+							}
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"id": 6,
+			"text": "门店系统",
+			"app_id": 7,
+			"children": 
+			[
+				{
+					"id": 61,
+					"text": "补货",
+					"children": 
+					[
+						{
+							"id": 611,
+							"text": "到货入库",
+							"activity_id": 16,
+							"attributes": 
+							{
+								"url": "point-of-sale/allotinv/allotinv.html"
+							}
+						},
+						{
+							"id": 612,
+							"text": "入库记录",
+							"activity_id": 15,
+							"attributes": 
+							{
+								"url": "point-of-sale/allotinv/allotinv-query.html"
+							}
+						},
+
+						{
+							"id": 612,
+							"text": "补货跟踪",
+							"activity_id": 14,
+							"attributes": 
+							{
+								"url": "point-of-sale/allotinv/allotinv-tracking.html"
+							}
+						}
+					]
+				},
+
+				{
+					"id": 62,
+					"text": "库存管理",
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+
+				{
+					"id": 63,
+					"text": "零售开单",
+					"activity_id": 18,
+					"attributes": 
+					{
+						"url": "point-of-sale/saleorder/saleorder.html"
+					}
+				}
+			]
+		},
+		{
+			"id": 7,
+			"text": "租户管理",
+			"app_id": 1,
+			"children": 
+			[
+				{
+					"id": 71,
+					"text": "租户注册",
+					"activity_id": 1,
+					"attributes": 
+					{
+						"url": "account/account-registry/account-registry.html"
+					}
+				},
+				{
+					"id": 72,
+					"text": "应用订购",
+					"activity_id": 2,
+					"attributes": 
+					{
+						"url": "account/app-subscribe/account-app.html"
+					}
+				},
+				{
+					"id": 73,
+					"text": "用户管理",
+					"activity_id": 28,
+					"attributes": 
+					{
+						"url": "account/account-user/account-user.html"
+					}
+				}
+			]
+		},
+		{
+			"id": 8,
+			"text": "企业空间",
+			"app_id": 10,
+			"children": 
+			[
+				{
+					"id": 81,
+					"text": "业务单元",
+					"activity_id": 25,
+					"attributes": 
+					{
+						"url": "account-org/bizunit/bizunit.html"
+					}
+				},
+				{
+					"id": 82,
+					"text": "人员管理",
+					"activity_id": 27,
+					"attributes": 
+					{
+						"url": "account-org/bizunit-user/user.html"
+					}
+				}
+			]
+		}		
+		
+	]
+}
