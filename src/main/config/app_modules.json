@@ -11,6 +11,7 @@
 				{
 					"id": 11,
 					"text": "品类规划",
+					"activity_id": 13,
 					"attributes": 
 					{
 						"url": "/demo/book/abc"
@@ -29,6 +30,7 @@
 				{
 					"id": 13,
 					"text": "商品档案管理",
+					"activity_id": 12,
 					"attributes": 
 					{
 						"url": "/demo/book/abc"
@@ -36,145 +38,210 @@
 				}
 			]
 		},
-		{
-			"id": 4,
-			"text": "渠道管理",
-			"app_id": 4,
-			"children": 
-			[
-				{
-					"id": 41,
-					"text": "渠道组织管理",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				},
-
-				{
-					"id": 42,
-					"text": "渠道补货关系",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				},
-
-				{
-					"id": 43,
-					"text": "价格及佣金政策",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				}
-			]
+		{   
+		    "id":4,   
+		    "text":"渠道管理",   
+		    "app_id": 4,
+		    "children":[
+		    	{   
+		    		"id": 41,
+		        	"text":"渠道组织管理",
+					"activity_id": 6,
+		        	"attributes":{   
+			            "url":"invcenter/channel/channel.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 42,
+		        	"text":"渠道补货关系",
+					"activity_id": 7,		        	
+		        	"attributes":{   
+			            "url":"/demo/book/abc" 
+			        }
+		    	},
+		    	{   
+		    		"id": 43,
+		        	"text":"结算及佣金政策",		        	
+		        	"attributes":{   
+			            "url":"/demo/book/abc" 
+			        }
+		    	},
+		    	{   
+		    		"id": 44,
+		        	"text":"允销目录管理",		      
+					"activity_id": 8,			        	  	
+		        	"attributes":{   
+			            "url":"/demo/book/abc" 
+			        }
+		    	},		    	
+		    	{   
+		    		"id": 45,
+		        	"text":"渠道价格管理",
+					"activity_id": 9,		        	
+		        	"attributes":{   
+			            "url":"invcenter/channelprices/channelprices.html" 
+			        }
+		    	}
+		    ]   
+		
 		},
-
-		{
-			"id": 3,
-			"text": "采购管理",
-			"app_id": 2,
-			"children": 
-			[
-				{
-					"id": 31,
-					"text": "供应商管理",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				},
-
-				{
-					"id": 32,
-					"text": "采购订单",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				}
-			]
+		{   
+		    "id":3,   
+		    "text":"采购管理",   
+			"app_id": 2,		    
+		    "children":[
+		    	{   
+		    		"id": 31,
+		        	"text":"供应商管理",
+		        	"attributes":{   
+			            "url":"/demo/book/abc" 
+			        }
+		    	},
+		    	{   
+		    		"id": 32,
+		        	"text":"采购订单",
+		        	"attributes":{   
+			            "url":"/demo/book/abc" 
+			        }
+		    	}
+		    ]   
+		
 		},
-
-		{
-			"id": 2,
-			"text": "库存中心",
-			"app_id": 3,
-			"children": 
-			[
-				{
-					"id": 21,
-					"text": "库存组织规划",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
+		{   
+		    "id":2,   
+		    "text":"库存中心",   
+			"app_id": 3,		    
+		    "children":[
+		    	{   
+		    		"id": 21,
+		        	"text":"仓库档案",
+		        	"activity_id": 29,		      
+		        	"attributes":{
+			            "url":"invcenter/warehouse/warehouses.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 22,
+		        	"text":"仓库货区档案",
+		        	"activity_id": 30,			        	
+		        	"attributes":{   
+			            "url":"invcenter/invarea/invarea.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 221,
+		        	"text":"货架货位档案",
+		        	"activity_id": 31,				        	
+		        	"attributes":{   
+			            "url":"invcenter/invfacility/invfacility.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 222,
+		        	"text":"货位商品关系档案",
+		        	"activity_id": 32,					        	
+		        	"attributes":{   
+			            "url":"invcenter/locationrelation/locationrelation.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 26,
+		        	"text":"供应商基本档案",
+		        	"activity_id": 33,        	
+		        	"attributes":{   
+			            "url":"invcenter/suppliers/suppliers.html" 
+			        }
+		    	},		    	
+		    	{   
+		    		"id": 231,
+		        	"text":"采购订单",
+		        	"activity_id": 34,        			        	
+		        	"attributes":{   
+			            "url":"invcenter/pharseorder/pharseorder.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 232,
+		        	"text":"采购入库单",
+		        	"activity_id": 3,
+		        	"attributes":{   
+			            "url":"invcenter/pharseinv/pharseinv.html" 
+			        }
+		    	},
+		    	{   
+				    "id":24,   
+				    "text":"拣货出库",   
+		        	"activity_id": 4,
+				    "children":[
+				    	{   
+				    		"id": 241,
+				        	"text":"待拣货",
+				        	
+				        	"attributes":{   
+					             "url":"invcenter/stockout/stockout.html" 
+					        }
+				    	},
+				    	{   
+				    		"id": 242,
+				        	"text":"拣货中",
+				        	"attributes":{   
+					             "url":"invcenter/stockout/stockout-onpicking.html" 
+					        }
+				    	},
+				    	{   
+				    		"id": 243,
+				        	"text":"已完成",
+				        	"attributes":{   
+					             "url":"invcenter/stockout/stockout-pickouted.html" 
+					        }
+				    	}
+				    ]
 				},
-
-				{
-					"id": 22,
-					"text": "仓储设施管理",
-					"attributes": 
-					{
-						"url": "/demo/book/abc"
-					}
-				},
-
-				{
-					"id": 23,
-					"text": "采购入库",
-					"attributes": 
-					{
-						"url": "invcenter/pharseinv/pharseinv.html"
-					}
-				},
-
-				{
-					"id": 24,
-					"text": "拣货出库",
-					"children": 
-					[
-						{
-							"id": 241,
-							"text": "待拣货",
-							"attributes": 
-							{
-								"url": "invcenter/stockout/stockout.html"
-							}
-						},
-
-						{
-							"id": 242,
-							"text": "拣货中",
-							"attributes": 
-							{
-								"url": "invcenter/stockout/stockout-onpicking.html"
-							}
-						},
-
-						{
-							"id": 243,
-							"text": "已完成",
-							"attributes": 
-							{
-								"url": "invcenter/stockout/stockout-pickouted.html"
-							}
-						}
-					]
-				},
-
-				{
-					"id": 25,
-					"text": "现存量查询",
-					"attributes": 
-					{
-						"url": "invcenter/onhand/onhand.html"
-					}
-				}
-			]
+		    	{   
+		    		"id": 25,
+		        	"text":"现存量查询",
+		        	"activity_id": 5,		        	
+		        	"attributes":{   
+			            "url":"invcenter/onhand/onhand.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 27,
+		        	"text":"调拨订单",
+		        	"activity_id": 35,		        	
+		        	"attributes":{   
+			            "url":"invcenter/allocateorders/allocateorders.html" 
+			        }
+		    	},
+		    	{   
+		    		"id": 28,
+		        	"text":"库存盘点单",
+		        	"activity_id": 36,
+        			"attributes":{   
+	            		"url":"invcenter/inventorycheck/inventorycheck.html" 
+	        		}
+		    	},
+		    	{   
+		    		"id": 29,
+		        	"text":"安全库存",
+		        	"activity_id": 37,		        		        	
+        			"attributes":{   
+	            		"url":"invcenter/safestock/safestock.html" 
+	        		}
+		        	
+		    	},
+		    	{   
+		    		"id": 30,
+		        	"text":"库存预警",
+		        	"activity_id": 38,		        		        	
+        			"attributes":{   
+	            		"url":"invcenter/safestockwarning/safestockwarning.html" 
+	        		}
+		        	
+		    	}
+		    ]   
+		
 		},
-
 		{
 			"id": 5,
 			"text": "营销中心",
@@ -189,6 +256,7 @@
 						{
 							"id": 511,
 							"text": "补货工作台",
+		        			"activity_id": 10,									
 							"attributes": 
 							{
 								"url": "sales-center/channel-replenishment/replenishment-workbench.html"
@@ -198,6 +266,7 @@
 						{
 							"id": 512,
 							"text": "发货通知",
+		        			"activity_id": 11,										
 							"children": 
 							[
 								{
@@ -232,6 +301,7 @@
 						{
 							"id": 513,
 							"text": "发货完成补货单",
+							"activity_id": 11,										
 							"attributes": 
 							{
 								"url": "sales-center/channel-replenishment/replenishment.html"
@@ -301,7 +371,15 @@
 					{
 						"url": "point-of-sale/saleorder/saleorder.html"
 					}
-				}
+				},
+				
+				{   
+		    		"id": 64,
+		        	"text":"退货单管理",
+		        	"attributes":{   
+			            "url":"point-of-sale/returnbill/returnbill.html" 
+			        }
+		    	}
 			]
 		},
 		{
