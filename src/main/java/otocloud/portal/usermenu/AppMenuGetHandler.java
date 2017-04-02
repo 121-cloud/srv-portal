@@ -413,6 +413,9 @@ public class AppMenuGetHandler extends OtoCloudEventHandlerImpl<JsonObject> {
 						for(JsonObject removedItem : childRemovedItems){
 							childMenus.remove(removedItem);
 						}
+						if(childMenus.size() <= 0){
+							removedItems.add(menuItem);
+						}
 					}
 					parentFuture.complete();					
 				});
