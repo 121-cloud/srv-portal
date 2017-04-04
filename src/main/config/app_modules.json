@@ -249,6 +249,15 @@
 			"children": 
 			[
 				{
+					"id": 50,
+					"text": "客户档案",
+        			"activity_id": 39,									
+					"attributes": 
+					{
+						"url": "sales-center/customer/customer.html"
+					}
+				},			
+				{
 					"id": 51,
 					"text": "渠道补货",
 					"children": 
