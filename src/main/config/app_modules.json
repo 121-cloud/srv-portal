@@ -43,12 +43,21 @@
 		    "text":"渠道管理",   
 		    "app_id": 4,
 		    "children":[
+				{
+					"id": 40,
+					"text": "客户档案",
+        			"activity_id": 39,									
+					"attributes": 
+					{
+						"url": "sales-center/customer/customer.html"
+					}
+				},	
 		    	{   
 		    		"id": 41,
 		        	"text":"渠道组织管理",
 					"activity_id": 6,
 		        	"attributes":{   
-			            "url":"invcenter/channel/channel.html" 
+			            "url":"channel-manager/channel/channel.html" 
 			        }
 		    	},
 		    	{   
@@ -248,15 +257,6 @@
 			"app_id": 5,
 			"children": 
 			[
-				{
-					"id": 50,
-					"text": "客户档案",
-        			"activity_id": 39,									
-					"attributes": 
-					{
-						"url": "sales-center/customer/customer.html"
-					}
-				},			
 				{
 					"id": 51,
 					"text": "渠道补货",
