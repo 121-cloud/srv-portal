@@ -17,11 +17,11 @@ import otocloud.portal.PortalService;
  * @author lijing
  */
 @IgnoreAuthVerify
-public class AppMenuDeleteHandler extends OtoCloudEventHandlerImpl<JsonObject> {
+public class AppMenuDeleteForUserHandler extends OtoCloudEventHandlerImpl<JsonObject> {
 	
 	public static final String ADDRESS = "delete";
 
-	public AppMenuDeleteHandler(OtoCloudComponentImpl componentImpl) {
+	public AppMenuDeleteForUserHandler(OtoCloudComponentImpl componentImpl) {
 		super(componentImpl);
 	}
 	
@@ -40,7 +40,7 @@ public class AppMenuDeleteHandler extends OtoCloudEventHandlerImpl<JsonObject> {
 		paramsDesc.add(new ApiParameterDescriptor("soid",""));		
 		handlerDescriptor.setParamsDesc(paramsDesc);	*/
 		
-		ActionURI uri = new ActionURI(ADDRESS, HttpMethod.GET);
+		ActionURI uri = new ActionURI(ADDRESS, HttpMethod.DELETE);
 		handlerDescriptor.setRestApiURI(uri);
 		
 		return handlerDescriptor;		

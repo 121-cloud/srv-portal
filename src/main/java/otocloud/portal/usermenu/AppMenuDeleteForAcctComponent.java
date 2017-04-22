@@ -12,12 +12,12 @@ import otocloud.framework.core.OtoCloudEventHandlerRegistry;
  * @date 2016年11月15日
  * @author lijing
  */
-public class AppMenuDeleteForUserComponent extends OtoCloudComponentImpl {
+public class AppMenuDeleteForAcctComponent extends OtoCloudComponentImpl {
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return "user-menu-del";
+		return "acct-menu-del";
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class AppMenuDeleteForUserComponent extends OtoCloudComponentImpl {
 		
 		List<OtoCloudEventHandlerRegistry> ret = new ArrayList<OtoCloudEventHandlerRegistry>();
 		
-		AppMenuDeleteForUserHandler appMenuDeleteHandler = new AppMenuDeleteForUserHandler(this);
+		AppMenuDeleteForAcctHandler appMenuDeleteHandler = new AppMenuDeleteForAcctHandler(this);
 		ret.add(appMenuDeleteHandler);
 		
 		

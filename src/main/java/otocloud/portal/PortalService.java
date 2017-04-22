@@ -9,6 +9,7 @@ import java.util.List;
 import otocloud.framework.core.OtoCloudComponent;
 import otocloud.framework.core.OtoCloudServiceForVerticleImpl;
 import otocloud.persistence.dao.MongoDataSource;
+import otocloud.portal.usermenu.AppMenuDeleteForAcctComponent;
 import otocloud.portal.usermenu.AppMenuDeleteForUserComponent;
 import otocloud.portal.usermenu.AppMenuGetForUserComponent;
 
@@ -53,6 +54,9 @@ public class PortalService extends OtoCloudServiceForVerticleImpl {
 		
 		AppMenuDeleteForUserComponent appMenuDeleteComponent = new AppMenuDeleteForUserComponent();
 		components.add(appMenuDeleteComponent);	
+		
+		AppMenuDeleteForAcctComponent appMenuDeleteForAcctComponent = new AppMenuDeleteForAcctComponent();
+		components.add(appMenuDeleteForAcctComponent);	
 
 				
 		return components;
