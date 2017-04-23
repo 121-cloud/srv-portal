@@ -1,19 +1,20 @@
 package otocloud.portal.usermenu;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 import io.vertx.core.CompositeFuture;
 import io.vertx.core.Future;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import otocloud.common.ActionURI;
 import otocloud.common.OtoCloudDirectoryHelper;
 import otocloud.framework.common.IgnoreAuthVerify;
+import otocloud.framework.core.CommandMessage;
 import otocloud.framework.core.HandlerDescriptor;
-import otocloud.framework.core.OtoCloudBusMessage;
 import otocloud.framework.core.OtoCloudComponentImpl;
 import otocloud.framework.core.OtoCloudEventHandlerImpl;
 import otocloud.portal.PortalService;
@@ -65,7 +66,7 @@ public class AppMenuGetHandler extends OtoCloudEventHandlerImpl<JsonObject> {
 
 	//处理器
 	@Override
-	public void handle(OtoCloudBusMessage<JsonObject> msg) {
+	public void handle(CommandMessage<JsonObject> msg) {
 		
 		JsonObject sessionInfo = msg.getSession();	
 		String acctId = sessionInfo.getString("acct_id");

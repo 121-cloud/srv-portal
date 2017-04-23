@@ -5,8 +5,8 @@ import io.vertx.core.http.HttpMethod;
 import io.vertx.core.json.JsonObject;
 import otocloud.common.ActionURI;
 import otocloud.framework.common.IgnoreAuthVerify;
+import otocloud.framework.core.CommandMessage;
 import otocloud.framework.core.HandlerDescriptor;
-import otocloud.framework.core.OtoCloudBusMessage;
 import otocloud.framework.core.OtoCloudComponentImpl;
 import otocloud.framework.core.OtoCloudEventHandlerImpl;
 import otocloud.portal.PortalService;
@@ -63,11 +63,11 @@ public class AppMenuDeleteForUserHandler extends OtoCloudEventHandlerImpl<JsonOb
 	 * }
 	 */
 	@Override
-	public void handle(OtoCloudBusMessage<JsonObject> msg) {
+	public void handle(CommandMessage<JsonObject> msg) {
 		
-    	JsonObject body = msg.body();
+    	//JsonObject body = msg.body();
 		
-        JsonObject content = body.getJsonObject("content"); 
+        JsonObject content = msg.getContent(); //.getJsonObject("content"); 
 		
 		String acctId = content.getString("acct_id");
 		String userId = content.getString("user_id");
