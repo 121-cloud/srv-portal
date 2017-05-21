@@ -130,6 +130,14 @@
 			        }
 		    	},
 		    	{   
+		    		"id": 211,
+		        	"text":"库存组织",
+		        	"activity_id": 41,		      
+		        	"attributes":{
+			            "url":"invcenter/invorg/invorg.html" 
+			        }
+		    	},
+		    	{   
 		    		"id": 22,
 		        	"text":"仓库货区档案",
 		        	"activity_id": 30,			        	
