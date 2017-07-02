@@ -49,7 +49,7 @@
         			"activity_id": 39,									
 					"attributes": 
 					{
-						"url": "sales-center/customer/customer.html"
+						"url": "channel-manager/customer/customer.html"
 					}
 				},	
 		    	{   
@@ -129,7 +129,7 @@
 			            "url":"invcenter/warehouse/warehouses.html" 
 			        }
 		    	},
-		    	{   
+				{   
 		    		"id": 211,
 		        	"text":"库存组织",
 		        	"activity_id": 41,		      
@@ -265,6 +265,14 @@
 			"app_id": 5,
 			"children": 
 			[
+				{   
+		    		"id": 50,
+		        	"text":"销售组织",
+		        	"activity_id": 42,		      
+		        	"attributes":{
+			            "url":"sales-center/saleorg/saleorg.html" 
+			        }
+		    	},			
 				{
 					"id": 51,
 					"text": "渠道补货",
