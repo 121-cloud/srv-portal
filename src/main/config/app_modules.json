@@ -54,7 +54,7 @@
 				},	
 		    	{   
 		    		"id": 41,
-		        	"text":"渠道组织管理",
+		        	"text":"渠道档案",
 					"activity_id": 6,
 		        	"attributes":{   
 			            "url":"channel-manager/channel/channel.html" 
