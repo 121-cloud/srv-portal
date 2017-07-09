@@ -467,7 +467,60 @@
 					}
 				}
 			]
-		}		
+		},
+		{
+			"id": 9,
+			"text": "产品运维中心",
+			"app_id": 11,
+			"children": 
+			[
+				{
+					"id": 91,
+					"text": "品类维护",
+					"activity_id": 44,
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+				{
+					"id": 92,
+					"text": "厂商与品牌管理",
+					"activity_id": 12,
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+				{
+					"id": 93,
+					"text": "计量单位维护",
+					"activity_id": 43,
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+				{
+					"id": 94,
+					"text": "产品SPU管理",
+					"activity_id": 45,
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				},
+				{
+					"id": 95,
+					"text": "产品SKU管理",
+					"activity_id": 45,
+					"attributes": 
+					{
+						"url": "/demo/book/abc"
+					}
+				}
+			]
+		}	
 		
 	]
 }
