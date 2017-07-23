@@ -470,7 +470,7 @@
 		},
 		{
 			"id": 9,
-			"text": "产品运维中心",
+			"text": "产品中心",
 			"app_id": 11,
 			"children": 
 			[
@@ -507,7 +507,7 @@
 					"activity_id": 45,
 					"attributes": 
 					{
-						"url": "/demo/book/abc"
+						"url": "product-center/spu/spu.html"
 					}
 				},
 				{
